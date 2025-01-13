@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Game</title>
+    <link rel="shortcut icon" href="/assets/game.png" type="image/x-icon" />
+    <link rel="stylesheet" href="simon_game.css" />
+  </head>
+  <body>
+
+    <audio class="endSound" controls src="./assets/soundEndGame.mp3"></audio>
+    <audio class="btnSound" controls src="./assets/tabsound.mp3"></audio>
+    <audio class="sbtnSound" controls src="./assets/StartGame.mp3"></audio>
+
+    <div class="container">
+      <h1>Simon Game</h1>
+      <h3>Press any key to start</h3>
+
+      <div class="btn-container">
+
+        <div class="line-one">
+          <div class="btn red size" type="button" id="red"></div>
+          <div class="btn blue size" type="button" id="blue"></div>
+        </div>
+
+        <div class="line-two">
+          <div class="btn green size" type="button" id="green"></div>
+          <div class="btn yellow size" type="button" id="yellow"></div>
+        </div>
+      </div>
+    </div>
+    <script src="simon_game.js"></script>
+  </body>
+</html>
